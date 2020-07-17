@@ -6,17 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="juc" />
         <module name="leetcode" />
+        <module name="ddd" />
+        <module name="juc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ddd" target="1.8" />
+      <module name="ddd-model" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ddd" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
     </option>
