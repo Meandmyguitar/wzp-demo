@@ -9,6 +9,7 @@
         <module name="leetcode" />
         <module name="ddd" />
         <module name="juc" />
+        <module name="support" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="ddd-model" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
+      <module name="support" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
