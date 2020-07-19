@@ -2,6 +2,7 @@ package com.wzp.cloud.graphql.oapi;
 
 
 import graphql.language.*;
+import graphql.language.Type;
 import graphql.language.Argument;
 import graphql.schema.*;
 

@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="graphql" />
         <module name="jvm" />
         <module name="convention" />
         <module name="util" />
-        <module name="graphql-cloud" />
         <module name="juc" />
-        <module name="support" />
         <module name="ddd" />
         <module name="leetcode" />
       </profile>
@@ -20,7 +19,7 @@
       <module name="convention" target="1.8" />
       <module name="ddd" target="1.8" />
       <module name="ddd-model" target="1.5" />
-      <module name="graphql-cloud" target="1.5" />
+      <module name="graphql" target="1.8" />
       <module name="juc" target="1.8" />
       <module name="jvm" target="1.5" />
       <module name="leetcode" target="1.8" />
@@ -33,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="convention" options="-parameters" />
       <module name="ddd" options="-parameters" />
+      <module name="graphql" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
       <module name="support" options="-parameters" />

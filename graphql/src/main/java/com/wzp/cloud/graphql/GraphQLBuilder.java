@@ -1,10 +1,10 @@
 package com.wzp.cloud.graphql;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lanmaoly.cloud.graphql.query.Query;
-import com.lanmaoly.cloud.graphql.query.QueryContext;
-import com.lanmaoly.cloud.graphql.query.QueryOption;
-import com.lanmaoly.cloud.graphql.type.QueryOptionInput;
+import com.wzp.cloud.graphql.query.Query;
+import com.wzp.cloud.graphql.query.QueryContext;
+import com.wzp.cloud.graphql.query.QueryOption;
+import com.wzp.cloud.graphql.type.QueryOptionInput;
 import graphql.schema.DataFetcher;
 import graphql.schema.idl.TypeRuntimeWiring;
 import org.apache.commons.beanutils.BeanUtilsBean2;

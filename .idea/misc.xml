@@ -9,12 +9,12 @@
         <option value="$PROJECT_DIR$/juc/pom.xml" />
         <option value="$PROJECT_DIR$/leetcode/pom.xml" />
         <option value="$PROJECT_DIR$/ddd/pom.xml" />
-        <option value="$PROJECT_DIR$/support/pom.xml" />
         <option value="$PROJECT_DIR$/convention-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/g/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
         <option value="$PROJECT_DIR$/convention/pom.xml" />
         <option value="$PROJECT_DIR$/util/pom.xml" />
+        <option value="$PROJECT_DIR$/graphql/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

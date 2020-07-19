@@ -1,8 +1,8 @@
 package com.wzp.cloud.graphql;
 
-import com.lanmaoly.cloud.graphql.oapi.DefaultOpenAPIOfGraphQLAdapter;
-import com.lanmaoly.cloud.graphql.oapi.GraphQLOpenAPIAdapter;
-import com.lanmaoly.cloud.graphql.oapi.OpenAPIAdapter;
+import com.wzp.cloud.graphql.oapi.DefaultOpenAPIOfGraphQLAdapter;
+import com.wzp.cloud.graphql.oapi.GraphQLOpenAPIAdapter;
+import com.wzp.cloud.graphql.oapi.OpenAPIAdapter;
 import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.wzp.cloud.graphql.oapi;
 
-import com.lanmaoly.cloud.graphql.Context;
+import com.wzp.cloud.graphql.Context;
 
 import java.util.concurrent.CompletableFuture;
 

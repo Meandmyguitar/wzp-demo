@@ -1,6 +1,6 @@
 package com.wzp.cloud.graphql.oapi;
 
-import com.lanmaoly.util.lang.StreamUtils;
+import com.wzp.cloud.graphql.StreamUtils;
 import graphql.language.*;
 import graphql.language.Type;
 import graphql.parser.Parser;

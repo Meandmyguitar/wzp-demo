@@ -1,9 +1,9 @@
 package com.wzp.cloud.graphql.oapi;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lanmaoly.cloud.graphql.Context;
-import com.lanmaoly.cloud.graphql.GraphQLExecutor;
-import com.lanmaoly.cloud.graphql.GraphQLRequestBody;
+import com.wzp.cloud.graphql.Context;
+import com.wzp.cloud.graphql.GraphQLExecutor;
+import com.wzp.cloud.graphql.GraphQLRequestBody;
 import graphql.ExecutionResult;
 import graphql.GraphQLError;
 import graphql.language.Document;

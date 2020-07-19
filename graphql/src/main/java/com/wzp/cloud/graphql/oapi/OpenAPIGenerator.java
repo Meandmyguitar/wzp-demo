@@ -1,6 +1,6 @@
 package com.wzp.cloud.graphql.oapi;
 
-import com.lanmaoly.util.lang.StreamUtils;
+import com.wzp.cloud.graphql.StreamUtils;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.Operation;

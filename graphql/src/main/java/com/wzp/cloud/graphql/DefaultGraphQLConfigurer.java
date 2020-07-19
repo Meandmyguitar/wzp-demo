@@ -1,6 +1,6 @@
 package com.wzp.cloud.graphql;
 
-import com.lanmaoly.cloud.graphql.query.Query;
+import com.wzp.cloud.graphql.query.Query;
 import graphql.GraphQL;
 import graphql.execution.AsyncExecutionStrategy;
 import graphql.execution.ExecutionStrategy;

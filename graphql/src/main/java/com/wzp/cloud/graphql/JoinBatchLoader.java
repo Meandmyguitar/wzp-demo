@@ -1,9 +1,9 @@
 package com.wzp.cloud.graphql;
 
-import com.lanmaoly.cloud.graphql.query.DataSet;
-import com.lanmaoly.cloud.graphql.query.Query;
-import com.lanmaoly.cloud.graphql.query.QueryContext;
-import com.lanmaoly.cloud.graphql.query.QueryOption;
+import com.wzp.cloud.graphql.query.DataSet;
+import com.wzp.cloud.graphql.query.Query;
+import com.wzp.cloud.graphql.query.QueryContext;
+import com.wzp.cloud.graphql.query.QueryOption;
 import org.apache.commons.beanutils.BeanUtilsBean2;
 import org.dataloader.MappedBatchLoader;
 

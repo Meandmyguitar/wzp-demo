@@ -1,6 +1,7 @@
 package com.wzp.cloud.graphql.type;
 
-import com.lanmaoly.cloud.graphql.query.SortDirection;
+
+import com.wzp.cloud.graphql.query.SortDirection;
 
 import java.util.Collections;
 import java.util.List;

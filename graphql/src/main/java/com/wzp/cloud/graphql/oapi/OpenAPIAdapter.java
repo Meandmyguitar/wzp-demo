@@ -1,8 +1,8 @@
 package com.wzp.cloud.graphql.oapi;
 
-import com.lanmaoly.cloud.graphql.Context;
-import com.lanmaoly.cloud.graphql.GraphQLExecutor;
-import com.lanmaoly.cloud.graphql.GraphQLJsons;
+import com.wzp.cloud.graphql.Context;
+import com.wzp.cloud.graphql.GraphQLExecutor;
+import com.wzp.cloud.graphql.GraphQLJsons;
 import graphql.schema.GraphQLSchema;
 import io.swagger.v3.core.util.Json;
 import io.swagger.v3.oas.models.OpenAPI;

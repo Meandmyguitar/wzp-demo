@@ -1,7 +1,6 @@
 package com.wzp.cloud.graphql;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lanmaoly.util.lang.ExceptionUtils;
 import graphql.execution.UnknownOperationException;
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
