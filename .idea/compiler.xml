@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="leetcode" />
-        <module name="ddd" />
-        <module name="juc" />
-        <module name="convention-cloud" />
+        <module name="convention" />
         <module name="graphql-cloud" />
+        <module name="juc" />
+        <module name="ddd" />
+        <module name="leetcode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="convention-cloud" target="1.8" />
+      <module name="convention" target="1.8" />
       <module name="ddd" target="1.8" />
       <module name="ddd-model" target="1.5" />
       <module name="graphql-cloud" target="1.5" />
@@ -25,7 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="convention-cloud" options="-parameters" />
+      <module name="convention" options="-parameters" />
       <module name="ddd" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
