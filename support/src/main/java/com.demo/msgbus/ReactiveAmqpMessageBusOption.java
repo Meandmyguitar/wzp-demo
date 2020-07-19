@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.msgbus;
+package com.demo.msgbus;
 
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;

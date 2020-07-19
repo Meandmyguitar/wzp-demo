@@ -1,10 +1,10 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.time.Duration;
 
-@ConfigurationProperties(prefix = "lanmaoly.cloud.support.lock")
+@ConfigurationProperties(prefix = "demo.lock")
 public class DistributedLockProperties {
 
     /**

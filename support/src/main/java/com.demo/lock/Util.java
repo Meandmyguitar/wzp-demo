@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.lock;
+package com.demo.lock;
 
 import com.lanmaoly.util.lang.JdbcUtils;
 import org.springframework.dao.DataAccessException;

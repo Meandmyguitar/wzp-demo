@@ -1,10 +1,10 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lanmaoly.cloud.support.JacksonBuilder;
-import com.lanmaoly.cloud.support.PersistentAmqpMessageResult;
-import com.lanmaoly.cloud.support.ReactorUtils;
+import com.demo.JacksonBuilder;
+import com.demo.PersistentAmqpMessageResult;
+import com.demo.ReactorUtils;
 import com.lanmaoly.util.lang.JdbcUtils;
 import com.lanmaoly.util.lang.TimeUtils;
 import com.rabbitmq.client.AMQP;

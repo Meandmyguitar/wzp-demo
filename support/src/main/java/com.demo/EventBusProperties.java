@@ -1,11 +1,11 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.net.URI;
 import java.time.Duration;
 
-@ConfigurationProperties(prefix = "lanmaoly.cloud.support.event")
+@ConfigurationProperties(prefix = "demo.event")
 public class EventBusProperties {
 
     private EventBusType type = EventBusType.AMQP;

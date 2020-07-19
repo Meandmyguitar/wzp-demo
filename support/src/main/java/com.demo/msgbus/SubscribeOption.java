@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.msgbus;
+package com.demo.msgbus;
 
 import java.util.Objects;
 import java.util.regex.Pattern;

@@ -1,8 +1,8 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "lanmaoly.cloud.support.metrics")
+@ConfigurationProperties(prefix = "demo.metrics")
 public class MetricsProperties {
 
     /**

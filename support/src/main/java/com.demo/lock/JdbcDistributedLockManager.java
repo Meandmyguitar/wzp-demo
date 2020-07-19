@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.lock;
+package com.demo.lock;
 
 import io.micrometer.core.instrument.*;
 import io.micrometer.core.instrument.Timer;

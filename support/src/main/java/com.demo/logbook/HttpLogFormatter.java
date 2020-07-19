@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.logbook;
+package com.demo.logbook;
 
 import org.zalando.logbook.PreparedHttpLogFormatter;
 

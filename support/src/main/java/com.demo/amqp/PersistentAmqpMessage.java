@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 import com.rabbitmq.client.AMQP;
 import reactor.rabbitmq.OutboundMessage;

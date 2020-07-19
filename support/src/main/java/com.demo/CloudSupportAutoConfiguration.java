@@ -1,17 +1,17 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
-import com.lanmaoly.cloud.support.amqp.AmqpPublisher;
-import com.lanmaoly.cloud.support.amqp.AmqpPublisherImpl;
-import com.lanmaoly.cloud.support.amqp.EnvelopeJsonConverter;
-import com.lanmaoly.cloud.support.event.MessageBusEventSpi;
-import com.lanmaoly.cloud.support.event.EventBus;
-import com.lanmaoly.cloud.support.lock.DistributedLockManager;
-import com.lanmaoly.cloud.support.lock.JdbcDistributedLockManager;
-import com.lanmaoly.cloud.support.lock.RedisDistributedLockManager;
-import com.lanmaoly.cloud.support.lock.ScheduledJdbcDistributedLockManager;
-import com.lanmaoly.cloud.support.logbook.HttpLogFormatter;
-import com.lanmaoly.cloud.support.metrics.MemoryUsageListener;
-import com.lanmaoly.cloud.support.msgbus.*;
+import com.demo.amqp.AmqpPublisher;
+import com.demo.amqp.AmqpPublisherImpl;
+import com.demo.amqp.EnvelopeJsonConverter;
+import com.demo.event.MessageBusEventSpi;
+import com.demo.event.EventBus;
+import com.demo.lock.DistributedLockManager;
+import com.demo.lock.JdbcDistributedLockManager;
+import com.demo.lock.RedisDistributedLockManager;
+import com.demo.lock.ScheduledJdbcDistributedLockManager;
+import com.demo.logbook.HttpLogFormatter;
+import com.demo.metrics.MemoryUsageListener;
+import com.demo.msgbus.*;
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -102,7 +102,7 @@ public class CloudSupportAutoConfiguration {
 
         @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
         @ConditionalOnBean(DataSource.class)
-        @ConditionalOnProperty(prefix = "lanmaoly.cloud.support.lock", name = "type", havingValue = "jdbc")
+        @ConditionalOnProperty(prefix = "demo.lock", name = "type", havingValue = "jdbc")
         @Bean
         public DistributedLockManager jdbcDistributedLockManager(
                 DataSource dataSource,
@@ -114,13 +114,13 @@ public class CloudSupportAutoConfiguration {
                     properties.getJdbc().getCleanInterval());
         }
 
-        @ConditionalOnProperty(prefix = "lanmaoly.cloud.support.lock", name = "type", havingValue = "redis")
+        @ConditionalOnProperty(prefix = "demo.lock", name = "type", havingValue = "redis")
         @Bean
         public DistributedLockManager redisDistributedLockManager(
                 DistributedLockProperties properties) {
             DistributedLockProperties.RedisContainer redis = properties.getRedis();
             if (redis.getUrl() == null) {
-                throw new IllegalStateException("lanmaoly.cloud.support.lock.redis.url未设置");
+                throw new IllegalStateException("demo.lock.redis.url未设置");
             }
             return new RedisDistributedLockManager(redis.getUrl(), redis.getDatabase());
         }
@@ -145,13 +145,13 @@ public class CloudSupportAutoConfiguration {
     @EnableConfigurationProperties(EventBusProperties.class)
     public static class EventBusConfiguration {
 
-        @ConditionalOnProperty(value = "lanmaoly.cloud.support.event.type", havingValue = "SIMPLE")
+        @ConditionalOnProperty(value = "demo.event.type", havingValue = "SIMPLE")
         @Bean
         public MessageBus simpleMessageBus(Environment environment) {
             return new SimpleMessageBus(environment.getRequiredProperty("spring.application.name"));
         }
 
-        @ConditionalOnProperty(value = "lanmaoly.cloud.support.event.type", havingValue = "AMQP")
+        @ConditionalOnProperty(value = "demo.event.type", havingValue = "AMQP")
         @Bean
         public MessageBus amqpMessageBus(
                 EventBusProperties properties,
@@ -179,7 +179,7 @@ public class CloudSupportAutoConfiguration {
                     amqp.getParallelism());
         }
 
-        @ConditionalOnProperty(value = "lanmaoly.cloud.support.event.type")
+        @ConditionalOnProperty(value = "demo.event.type")
         @Bean
         public EventBus eventBus(MessageBus messageBus, Environment environment) {
             String group = environment.getRequiredProperty("spring.application.name");

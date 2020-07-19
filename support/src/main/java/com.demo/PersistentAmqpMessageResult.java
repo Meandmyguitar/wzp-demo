@@ -1,6 +1,6 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
-import com.lanmaoly.cloud.support.amqp.PersistentAmqpMessage;
+import com.demo.amqp.PersistentAmqpMessage;
 import reactor.rabbitmq.OutboundMessageResult;
 
 public class PersistentAmqpMessageResult {

@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.lock;
+package com.demo.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

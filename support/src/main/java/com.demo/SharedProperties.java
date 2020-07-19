@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.msgbus;
+package com.demo.msgbus;
 
 import com.lanmaoly.util.lang.ExceptionUtils;
 import org.slf4j.Logger;

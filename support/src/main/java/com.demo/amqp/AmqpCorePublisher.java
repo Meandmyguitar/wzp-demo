@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.lanmaoly.util.lang.JdbcUtils;

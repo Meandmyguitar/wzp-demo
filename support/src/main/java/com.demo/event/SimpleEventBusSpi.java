@@ -1,7 +1,7 @@
-package com.lanmaoly.cloud.support.event;
+package com.demo.event;
 
-import com.lanmaoly.cloud.support.msgbus.MessageBus;
-import com.lanmaoly.cloud.support.msgbus.SubscribeOption;
+import com.demo.msgbus.MessageBus;
+import com.demo.msgbus.SubscribeOption;
 
 import java.util.function.Consumer;
 

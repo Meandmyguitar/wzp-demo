@@ -17,7 +17,7 @@
       <module name="ddd-model" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
-      <module name="support" target="1.5" />
+      <module name="support" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,6 +25,7 @@
       <module name="ddd" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
+      <module name="support" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,7 +1,7 @@
-package com.lanmaoly.cloud.support.msgbus;
+package com.demo.msgbus;
 
-import com.lanmaoly.cloud.support.lock.DistributedLock;
-import com.lanmaoly.cloud.support.lock.DistributedLockManager;
+import com.demo.lock.DistributedLock;
+import com.demo.lock.DistributedLockManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEvent;

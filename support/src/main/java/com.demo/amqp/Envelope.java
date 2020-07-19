@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.tracing;
+package com.demo.tracing;
 
 import brave.Span;
 import brave.Tracer;

@@ -1,11 +1,11 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.time.Duration;
 
-@ConfigurationProperties(prefix = "lanmaoly.cloud.support.amqp")
+@ConfigurationProperties(prefix = "demo.amqp")
 public class AmqpProperties {
 
     /**

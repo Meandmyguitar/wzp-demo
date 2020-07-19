@@ -1,8 +1,8 @@
-package com.lanmaoly.cloud.support.msgbus;
+package com.demo.msgbus;
 
-import com.lanmaoly.cloud.support.PersistentAmqpMessageResult;
-import com.lanmaoly.cloud.support.amqp.PersistentAmqpMessage;
-import com.lanmaoly.cloud.support.amqp.ReactivePersistentAmqpSender;
+import com.demo.PersistentAmqpMessageResult;
+import com.demo.amqp.PersistentAmqpMessage;
+import com.demo.amqp.ReactivePersistentAmqpSender;
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.ConnectionFactory;
 import org.apache.commons.lang3.StringUtils;

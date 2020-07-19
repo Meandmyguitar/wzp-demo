@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 /**
  * 可靠的AMQP消息队列发送类，必须在事务内调用

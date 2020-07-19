@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 public class CloudSupportBeans {
 

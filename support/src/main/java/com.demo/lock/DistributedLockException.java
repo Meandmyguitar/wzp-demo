@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.lock;
+package com.demo.lock;
 
 @SuppressWarnings("WeakerAccess")
 public class DistributedLockException extends RuntimeException {

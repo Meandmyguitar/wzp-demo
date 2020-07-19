@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.event;
+package com.demo.event;
 
 import java.io.Serializable;
 import java.util.function.Consumer;

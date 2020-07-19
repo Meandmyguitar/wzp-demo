@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support;
+package com.demo;
 
 import com.lanmaoly.util.lang.ExceptionUtils;
 import org.apache.commons.lang3.tuple.Triple;

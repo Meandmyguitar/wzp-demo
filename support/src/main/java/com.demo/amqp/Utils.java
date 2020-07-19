@@ -1,9 +1,9 @@
-package com.lanmaoly.cloud.support.amqp;
+package com.demo.amqp;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lanmaoly.cloud.support.JacksonBuilder;
+import com.demo.JacksonBuilder;
 
 import java.io.IOException;
 import java.io.Serializable;

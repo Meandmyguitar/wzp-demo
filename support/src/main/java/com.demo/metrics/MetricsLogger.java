@@ -1,4 +1,4 @@
-package com.lanmaoly.cloud.support.metrics;
+package com.demo.metrics;
 
 import io.micrometer.core.instrument.ImmutableTag;
 import io.micrometer.core.instrument.Metrics;
