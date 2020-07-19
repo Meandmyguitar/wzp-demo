@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
         <module name="convention" />
+        <module name="util" />
         <module name="graphql-cloud" />
         <module name="juc" />
         <module name="support" />
@@ -25,6 +26,7 @@
       <module name="leetcode" target="1.8" />
       <module name="support" target="1.8" />
       <module name="support-cloud" target="1.8" />
+      <module name="util" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -35,6 +37,7 @@
       <module name="leetcode" options="-parameters" />
       <module name="support" options="-parameters" />
       <module name="support-cloud" options="-parameters" />
+      <module name="util" options="-parameters" />
     </option>
   </component>
 </project>

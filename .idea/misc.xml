@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/g/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
         <option value="$PROJECT_DIR$/convention/pom.xml" />
+        <option value="$PROJECT_DIR$/util/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
