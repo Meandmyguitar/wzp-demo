@@ -2,7 +2,7 @@ package com.wzp.cloud.support;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "lanmaoly.cloud.support.shared")
+@ConfigurationProperties(prefix = "wzp.cloud.support.shared")
 public class SharedProperties {
 
     /**

@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="convention" />
         <module name="graphql-cloud" />
         <module name="juc" />
+        <module name="support" />
         <module name="ddd" />
         <module name="leetcode" />
       </profile>
@@ -20,6 +20,7 @@
       <module name="graphql-cloud" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
+      <module name="support" target="1.8" />
       <module name="support-cloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -29,6 +30,7 @@
       <module name="ddd" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
+      <module name="support" options="-parameters" />
       <module name="support-cloud" options="-parameters" />
     </option>
   </component>
