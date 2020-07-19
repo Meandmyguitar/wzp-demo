@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
+        <module name="convention" />
         <module name="graphql-cloud" />
         <module name="juc" />
         <module name="support" />

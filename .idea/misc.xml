@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/convention-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/g/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
+        <option value="$PROJECT_DIR$/convention/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
