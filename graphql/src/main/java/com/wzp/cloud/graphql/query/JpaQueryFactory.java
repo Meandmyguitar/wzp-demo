@@ -1,7 +1,7 @@
 package com.wzp.cloud.graphql.query;
 
-import com.lanmaoly.util.lang.StreamUtils;
 import com.querydsl.jpa.impl.JPAQuery;
+import com.wzp.cloud.graphql.StreamUtils;
 import org.hibernate.SessionFactory;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;

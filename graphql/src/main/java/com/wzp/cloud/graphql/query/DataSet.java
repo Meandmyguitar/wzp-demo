@@ -1,6 +1,6 @@
 package com.wzp.cloud.graphql.query;
 
-import com.lanmaoly.cloud.graphql.GraphQLType;
+import com.wzp.cloud.graphql.GraphQLType;
 
 import java.util.Collections;
 import java.util.List;
