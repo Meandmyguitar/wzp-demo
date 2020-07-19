@@ -9,23 +9,25 @@
         <module name="leetcode" />
         <module name="ddd" />
         <module name="juc" />
-        <module name="support" />
+        <module name="convention-cloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="convention-cloud" target="1.8" />
       <module name="ddd" target="1.8" />
       <module name="ddd-model" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
-      <module name="support" target="1.8" />
+      <module name="support-cloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="convention-cloud" options="-parameters" />
       <module name="ddd" options="-parameters" />
       <module name="juc" options="-parameters" />
       <module name="leetcode" options="-parameters" />
-      <module name="support" options="-parameters" />
+      <module name="support-cloud" options="-parameters" />
     </option>
   </component>
 </project>

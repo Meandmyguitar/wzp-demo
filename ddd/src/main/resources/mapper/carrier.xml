@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper
-        namespace="com.demo.infrastructure.db.mapper.CarrierMovementMapper">
+        namespace="com.wzp.cloud.support.infrastructure.db.mapper.CarrierMovementMapper">
 
     <resultMap id="carrierMovementDO"
-               type="com.demo.infrastructure.db.dataobject.CarrierMovementDO">
+               type="com.wzp.cloud.support.infrastructure.db.dataobject.CarrierMovementDO">
         <result property="scheduleId" column="schedule_id"/>
         <result property="fromLocationId" column="fromLocation_code"/>
         <result property="toLocationId" column="toLocation_code"/>

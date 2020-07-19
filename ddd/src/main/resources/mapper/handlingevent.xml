@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper
-        namespace="com.demo.infrastructure.db.mapper.HandlingEventMapper">
+        namespace="com.wzp.cloud.support.infrastructure.db.mapper.HandlingEventMapper">
 
     <resultMap id="handlingEventDO"
-               type="com.demo.infrastructure.db.dataobject.HandlingEventDO">
+               type="com.wzp.cloud.support.infrastructure.db.dataobject.HandlingEventDO">
         <result property="cargoId" column="cargo_id"/>
         <result property="scheduleId" column="schedule_id"/>
     </resultMap>

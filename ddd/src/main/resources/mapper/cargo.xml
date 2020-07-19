@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper
-        namespace="com.demo.infrastructure.db.mapper.CargoMapper">
+        namespace="com.wzp.cloud.support.infrastructure.db.mapper.CargoMapper">
 
     <resultMap id="cargoDO"
-               type="com.demo.infrastructure.db.dataobject.CargoDO">
+               type="com.wzp.cloud.support.infrastructure.db.dataobject.CargoDO">
         <result property="senderPhone" column="sender_phone"/>
         <result property="originLocationCode"
                 column="originLocation_code"/>
