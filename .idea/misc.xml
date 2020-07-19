@@ -11,7 +11,13 @@
         <option value="$PROJECT_DIR$/ddd/pom.xml" />
         <option value="$PROJECT_DIR$/support/pom.xml" />
         <option value="$PROJECT_DIR$/convention-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/g/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/graphql-cloud/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

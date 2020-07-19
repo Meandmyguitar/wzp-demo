@@ -10,12 +10,14 @@
         <module name="ddd" />
         <module name="juc" />
         <module name="convention-cloud" />
+        <module name="graphql-cloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="convention-cloud" target="1.8" />
       <module name="ddd" target="1.8" />
       <module name="ddd-model" target="1.5" />
+      <module name="graphql-cloud" target="1.5" />
       <module name="juc" target="1.8" />
       <module name="leetcode" target="1.8" />
       <module name="support-cloud" target="1.8" />
