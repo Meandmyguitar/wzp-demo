@@ -11,6 +11,8 @@ import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.util.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ForkJoinPool;
 
 public class SmartInvoker {
 
@@ -159,6 +161,8 @@ public class SmartInvoker {
                     return deserializer.deserialize(primitive.getAsBoolean());
                 }
             }
+//            ForkJoinPool
+//            Executors
             return deserializer.deserialize(json.getAsString());
         }
 
