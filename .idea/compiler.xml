@@ -10,6 +10,7 @@
         <module name="jvm" />
         <module name="convention" />
         <module name="util" />
+        <module name="support" />
         <module name="juc" />
         <module name="ddd" />
         <module name="leetcode" />

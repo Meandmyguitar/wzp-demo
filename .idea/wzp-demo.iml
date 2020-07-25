@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/graphql/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/convention/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/convention/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/support/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/support" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

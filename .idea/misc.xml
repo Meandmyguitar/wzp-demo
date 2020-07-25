@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/convention/pom.xml" />
         <option value="$PROJECT_DIR$/util/pom.xml" />
         <option value="$PROJECT_DIR$/graphql/pom.xml" />
+        <option value="$PROJECT_DIR$/support/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
