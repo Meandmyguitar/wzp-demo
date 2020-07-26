@@ -134,6 +134,9 @@ public class AccessToken {
         String token = accessToken.sign(secret);
         System.out.println(token);
 
+        AccessToken decode = AccessToken.decode(token);
+        System.out.println(decode);
+
         AccessToken verify = AccessToken.verify(token, secret);
         System.out.println(verify);
     }
