@@ -37,5 +37,5 @@
         redis基于redisson的分布式锁
         mysql悲观锁实现的分布式锁（所有分布式服务互斥）
         对rabbitmq封装，保证消息不丢
-        用rabbitmq封装message bus，项目中方便自定义异步
+        用rabbitmq封装message bus，项目中方便使用消息队列，只需要关注业务即可
 ```
