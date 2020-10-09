@@ -66,7 +66,7 @@ public class LeakyBucketLimiter implements RateLimiter {
         RateLimiter rateLimiter = new LeakyBucketLimiter(1);
 
         Runnable runnable = () -> {
-            int num = 100;
+            int num = 5;
             while (num > 0) {
                 try {
                     rateLimiter.acquire();
@@ -81,7 +81,7 @@ public class LeakyBucketLimiter implements RateLimiter {
 
         long start = System.currentTimeMillis();
         ExecutorService threadPool = Executors.newCachedThreadPool();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             threadPool.submit(runnable);
         }
         threadPool.awaitTermination(100, TimeUnit.SECONDS);

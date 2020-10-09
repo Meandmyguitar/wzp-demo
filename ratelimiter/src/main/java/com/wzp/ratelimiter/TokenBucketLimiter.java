@@ -7,6 +7,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 令牌桶
+ */
 public class TokenBucketLimiter implements RateLimiter {
 
     private static final int DEFAULT_RATE_LIMIT_PER_SECOND = Integer.MAX_VALUE;

@@ -12,11 +12,9 @@
         <option value="$PROJECT_DIR$/convention-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/g/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
-        <option value="$PROJECT_DIR$/convention/pom.xml" />
         <option value="$PROJECT_DIR$/util/pom.xml" />
-        <option value="$PROJECT_DIR$/graphql/pom.xml" />
         <option value="$PROJECT_DIR$/data-structure/pom.xml" />
-        <option value="$PROJECT_DIR$/support/pom.xml" />
+        <option value="$PROJECT_DIR$/ratelimiter/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,6 +1,7 @@
 package com.wzp.util.valid;
 
 import com.wzp.util.etc.StringUtils;
+import com.wzp.util.pubsub.NoOpPubSub;
 import org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator;
 
 import javax.validation.*;

@@ -4,6 +4,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * 计数器
+ */
 public class RateCounter implements RateLimiter {
 
     private static final int DEFAULT_RATE_LIMIT_PER_SECOND = Integer.MAX_VALUE;
