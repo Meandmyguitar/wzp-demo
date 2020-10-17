@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class HighConcurrencyTest {
 
-    public static final ExecutorService executor = Executors.newFixedThreadPool(5);
+    public static final ExecutorService executor = Executors.newFixedThreadPool(4);
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         futureMethod();
@@ -21,19 +21,25 @@ public class HighConcurrencyTest {
         guavaListenableFutureMethod();
     }
 
-    private static void guavaListenableFutureMethod() throws ExecutionException, InterruptedException {
+    private static void futureMethod() {
         long start = System.currentTimeMillis();
-        ListeningExecutorService listeningExecutorService = MoreExecutors.listeningDecorator(executor);
+        for (int i = 0; i < 100; i++) {
 
-        ListenableFuture<String> submit1 = listeningExecutorService.submit(HighConcurrencyTest::test1);
-        ListenableFuture<String> submit2 = listeningExecutorService.submit(HighConcurrencyTest::test1);
-        ListenableFuture<String> submit3 = listeningExecutorService.submit(HighConcurrencyTest::test1);
-        ListenableFuture<String> submit4 = listeningExecutorService.submit(HighConcurrencyTest::test1);
-
-        ListenableFuture<List<String>> listListenableFuture = Futures.allAsList(submit1, submit2, submit3, submit4);
-        List<String> join = listListenableFuture.get();
-        System.out.println(join);
-        System.out.println("GuavaListenableFuture方式耗时：" + (System.currentTimeMillis() - start) + "ms");
+        }
+        Future<String> submit1 = executor.submit(HighConcurrencyTest::test1);
+        Future<String> submit2 = executor.submit(HighConcurrencyTest::test1);
+        Future<String> submit3 = executor.submit(HighConcurrencyTest::test1);
+        Future<String> submit4 = executor.submit(HighConcurrencyTest::test1);
+        List<Future<String>> futures = Arrays.asList(submit1, submit2, submit3, submit4);
+        List<String> collect = futures.stream().map(future -> {
+            try {
+                return future.get();
+            } catch (Exception e) {
+                return null;
+            }
+        }).collect(Collectors.toList());
+        System.out.println(collect);
+        System.out.println("Future方式耗时：" + (System.currentTimeMillis() - start) + "ms");
         System.out.println();
     }
 
@@ -56,28 +62,25 @@ public class HighConcurrencyTest {
         System.out.println();
     }
 
-    private static void futureMethod() {
+    private static void guavaListenableFutureMethod() throws ExecutionException, InterruptedException {
         long start = System.currentTimeMillis();
-        Future<String> submit1 = executor.submit(HighConcurrencyTest::test1);
-        Future<String> submit2 = executor.submit(HighConcurrencyTest::test1);
-        Future<String> submit3 = executor.submit(HighConcurrencyTest::test1);
-        List<Future<String>> futures = Arrays.asList(submit1, submit2, submit3);
-        List<String> collect = futures.stream().map(future -> {
-            try {
-                return future.get();
-            } catch (Exception e) {
-                return null;
-            }
-        }).collect(Collectors.toList());
-        System.out.println(collect);
-        System.out.println("Future方式耗时：" + (System.currentTimeMillis() - start) + "ms");
+        ListeningExecutorService listeningExecutorService = MoreExecutors.listeningDecorator(executor);
+
+        ListenableFuture<String> submit1 = listeningExecutorService.submit(HighConcurrencyTest::test1);
+        ListenableFuture<String> submit2 = listeningExecutorService.submit(HighConcurrencyTest::test1);
+        ListenableFuture<String> submit3 = listeningExecutorService.submit(HighConcurrencyTest::test1);
+        ListenableFuture<String> submit4 = listeningExecutorService.submit(HighConcurrencyTest::test1);
+
+        ListenableFuture<List<String>> listListenableFuture = Futures.allAsList(submit1, submit2, submit3, submit4);
+        List<String> join = listListenableFuture.get();
+        System.out.println(join);
+        System.out.println("GuavaListenableFuture方式耗时：" + (System.currentTimeMillis() - start) + "ms");
         System.out.println();
     }
 
-
     private static String test1() {
         try {
-            Thread.sleep(100);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
