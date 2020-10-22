@@ -1,9 +1,6 @@
 package com.wzp.util.highconcurrency;
 
-import com.google.common.util.concurrent.Futures;
-import com.google.common.util.concurrent.ListenableFuture;
-import com.google.common.util.concurrent.ListeningExecutorService;
-import com.google.common.util.concurrent.MoreExecutors;
+import com.google.common.util.concurrent.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +10,15 @@ import java.util.stream.Collectors;
 
 public class HighConcurrencyTest {
 
-    public static final ExecutorService executor = Executors.newFixedThreadPool(5);
+    private static int core = Runtime.getRuntime().availableProcessors();
+    private static ExecutorService executor = new ThreadPoolExecutor(
+            core,
+            core,
+            30,
+            TimeUnit.MILLISECONDS,
+            new ArrayBlockingQueue<>(core),
+            new ThreadFactoryBuilder().setNameFormat("HighConcurrencyTest").build(),
+            new ThreadPoolExecutor.AbortPolicy());
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         futureMethod();
@@ -38,12 +43,12 @@ public class HighConcurrencyTest {
     }
 
     private static void completableFutureMethod() {
+        List<String> requestParam = Arrays.asList("wzp01", "wzp02","wzp03","wzp04");
         long start = System.currentTimeMillis();
         ArrayList<CompletableFuture<String>> futures = new ArrayList<>(4);
-        futures.add(CompletableFuture.supplyAsync(HighConcurrencyTest::test1, executor));
-        futures.add(CompletableFuture.supplyAsync(HighConcurrencyTest::test1, executor));
-        futures.add(CompletableFuture.supplyAsync(HighConcurrencyTest::test1, executor));
-        futures.add(CompletableFuture.supplyAsync(HighConcurrencyTest::test1, executor));
+        requestParam.stream()
+                .map(param -> futures.add(CompletableFuture.supplyAsync(HighConcurrencyTest::test1, executor)))
+                .collect(Collectors.toList());
 
         CompletableFuture<Void> allOf = CompletableFuture.allOf(futures.toArray(new CompletableFuture[4]));
 

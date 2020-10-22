@@ -19,6 +19,7 @@
         <module>support</module>
         <module>convention</module>
         <module>graphql</module>
+        <module>algorithm</module>
     </modules>
 
     <properties>
@@ -29,13 +30,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.lanmaoly.pom</groupId>
-                <artifactId>spring-cloud-bom</artifactId>
-                <version>0.1.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>org.zalando</groupId>
                 <artifactId>logbook-bom</artifactId>
@@ -54,11 +48,6 @@
                 <groupId>io.projectreactor.rabbitmq</groupId>
                 <artifactId>reactor-rabbitmq</artifactId>
                 <version>1.4.1.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>com.lanmaoly.util</groupId>
-                <artifactId>lanmaoly-util-lang</artifactId>
-                <version>0.0.2</version>
             </dependency>
             <dependency>
                 <groupId>commons-beanutils</groupId>
@@ -122,11 +111,6 @@
                 <artifactId>swagger-models</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-integration</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -147,26 +131,5 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring.boot.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
-        <plugins>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <version>4.2.1</version>
-                <extensions>true</extensions>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
